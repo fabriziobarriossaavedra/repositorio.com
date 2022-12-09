@@ -1,0 +1,15 @@
+.micontenedor{
+    width: 94%;
+    font-family: 'Klee One', cursive;
+    margin: 0 auto;
+}
+.info{
+    text-align: justify;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.modal-body::-webkit-scrollbar {
+    display: none;
+}
