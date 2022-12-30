@@ -32,6 +32,18 @@ ul {
   font-weight: 500;
 }
 
+h3 {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 a {
   color: #222222;
   text-decoration: none;
@@ -52,17 +64,39 @@ h1 {
 
 .micontainer {
   width: 94%;
-  font-family: "Klee One", cursive;
   margin: 0 auto;
 }
 
+body.dark div {
+  color: #FEFEFE;
+}
 body.dark div h1 {
   color: #FEFEFE;
 }
 body.dark div a {
   color: #FEFEFE;
 }
+body.dark div h3 {
+  color: #FEFEFE;
+}
+body.dark div p {
+  color: #FEFEFE;
+}
+body.dark div div {
+  color: #FEFEFE;
+}
 
+/*
+.row {
+    display: row;
+    .col{
+        .cajadw{
+            .texto{
+                background: $blanco;
+            }
+        }
+    }
+}*/
 nav {
   background: rgba(241, 241, 241, 0.2862745098);
   display: flex;

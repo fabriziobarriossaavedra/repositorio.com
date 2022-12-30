@@ -39,6 +39,16 @@ ul {
     text-decoration: none;
     font-weight: 500;
 }
+h3{
+    color: $grisOscuro;
+    text-decoration: none;
+    font-weight: 500;
+}
+p{
+    color: $grisOscuro;
+    text-decoration: none;
+    font-weight: 500;
+}
 a{
     color: $grisOscuro;
     text-decoration: none;
@@ -56,20 +66,41 @@ h1{
 }
 .micontainer{
     width: 94%;
-    font-family: 'Klee One', cursive;
     margin: 0 auto;
 }
+
 //nav para modo negro
 div {
     body.dark & {
+        color: $blanco;
         h1 {
             color: $blanco;
         }
         a {
             color: $blanco;
         }
+        h3{
+            color: $blanco;
+        }
+        p{
+            color: $blanco;
+        }
+        div{
+            color: $blanco;
+        }
     }
 }
+/*
+.row {
+    display: row;
+    .col{
+        .cajadw{
+            .texto{
+                background: $blanco;
+            }
+        }
+    }
+}*/
 
 nav {
     background: #f1f1f149;
