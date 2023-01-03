@@ -26,21 +26,13 @@ strong {
   font-weight: 500;
 }
 
-ul {
-  color: #222222;
-  text-decoration: none;
-  font-weight: 500;
-}
-
 h3 {
   color: #222222;
-  text-decoration: none;
   font-weight: 500;
 }
 
 p {
   color: #222222;
-  text-decoration: none;
   font-weight: 500;
 }
 
@@ -55,8 +47,31 @@ li {
   text-decoration: none;
   font-weight: 500;
 }
+li button {
+  text-decoration: none;
+}
 
 h1 {
+  color: #222222;
+  font-weight: 500;
+}
+
+h2 {
+  color: #222222;
+  font-weight: 500;
+}
+
+.offcanvas .offcanvas-end {
+  color: #222222;
+  font-weight: 500;
+}
+
+h5 {
+  color: #222222;
+  font-weight: 500;
+}
+
+button {
   color: #222222;
   text-decoration: none;
   font-weight: 500;
@@ -64,6 +79,7 @@ h1 {
 
 .micontainer {
   width: 94%;
+  font-family: "Signika Negative", sans-serif;
   margin: 0 auto;
 }
 
@@ -82,22 +98,59 @@ body.dark div h3 {
 body.dark div p {
   color: #FEFEFE;
 }
-body.dark div div {
+body.dark div button {
   color: #FEFEFE;
 }
 
-/*
-.row {
-    display: row;
-    .col{
-        .cajadw{
-            .texto{
-                background: $blanco;
-            }
-        }
-    }
-}*/
-nav {
+body.dark .navbar-toggler span {
+  color: #FEFEFE;
+}
+
+body.dark .offcanvas {
+  background: #222222;
+  box-shadow: #FEFEFE;
+}
+body.dark .offcanvas a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+body.dark .offcanvas a:hover {
+  color: #111111;
+}
+body.dark .offcanvas h5 {
+  color: #FEFEFE;
+}
+body.dark .offcanvas button {
+  color: #FEFEFE;
+}
+
+body.dark .offcanvas-body li a {
+  color: #FEFEFE;
+}
+body.dark .offcanvas-body li a:hover {
+  color: #111111;
+}
+
+body.dark .inicio {
+  box-shadow: #FEFEFE;
+}
+body.dark .inicio a {
+  color: #FEFEFE;
+}
+body.dark .inicio a:hover {
+  color: #111111;
+}
+body.dark .inicio h2 {
+  color: #FEFEFE;
+}
+body.dark .inicio .redsocial {
+  color: #FEFEFE;
+}
+body.dark .inicio .contenedor-banner {
+  background-color: #e74545;
+}
+
+.navbar {
   background: rgba(241, 241, 241, 0.2862745098);
   display: flex;
   justify-content: space-between;
@@ -107,19 +160,28 @@ nav {
   transition: 0.6s ease all;
   box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
 }
-body.dark nav {
+body.dark .navbar {
   background: #222222;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
-body.dark nav strong {
+body.dark .navbar strong {
   color: #FEFEFE;
 }
-body.dark nav a {
+body.dark .navbar a {
   color: #FEFEFE;
   text-decoration: none;
 }
-body.dark nav a:hover {
+body.dark .navbar a:hover {
   color: #111111;
+}
+body.dark .navbar div {
+  color: #FEFEFE;
+}
+body.dark .navbar div h5 {
+  color: #FEFEFE;
+}
+body.dark .navbar div button {
+  color: #FEFEFE;
 }
 
 .darkmode {
@@ -160,4 +222,75 @@ body.dark nav a:hover {
   display: block;
   background: none;
   color: #fff;
-}/*# sourceMappingURL=darkmode.css.map */
+}
+
+/*seccion css*/
+.inicio {
+  background-size: cover;
+  height: 85vh;
+  color: #FEFEFE;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .contenedor-banner {
+  background-color: #254BE6;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.inicio .contenedor-banner img {
+  margin-top: 40px;
+  border: 2px solid #111111;
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.inicio .contenedor-banner h1 {
+  margin-top: 42px;
+  font-size: 40px;
+}
+
+.inicio .contenedor-banner h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.inicio .contenedor-banner .redsocial a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 12px 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.inicio .contenedor-banner .redsocial a:hover {
+  background-color: #e74545;
+}
+
+/*para lo que es responsivo*/
+.navbar-toggler {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+  .nave1 {
+    display: none;
+  }
+}
+/*fin*//*# sourceMappingURL=darkmode.css.map */
