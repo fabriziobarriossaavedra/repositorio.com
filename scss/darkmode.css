@@ -77,6 +77,14 @@ button {
   font-weight: 500;
 }
 
+.img2 {
+  display: none;
+}
+
+.inicio .contenedor-banner .contenedor-img .img2 {
+  display: none;
+}
+
 .micontainer {
   width: 94%;
   font-family: "Signika Negative", sans-serif;
@@ -132,6 +140,7 @@ body.dark .offcanvas-body li a:hover {
 }
 
 body.dark .inicio {
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/avatar/myAvatar2.png);
   box-shadow: #FEFEFE;
 }
 body.dark .inicio a {
@@ -148,6 +157,15 @@ body.dark .inicio .redsocial {
 }
 body.dark .inicio .contenedor-banner {
   background-color: #e74545;
+}
+body.dark .inicio .redsocial a:hover {
+  background-color: #3E60E9;
+}
+body.dark .inicio .img1 {
+  display: none;
+}
+body.dark .inicio .contenedor-banner .contenedor-img .img2 {
+  display: inline-block;
 }
 
 .navbar {
@@ -182,6 +200,12 @@ body.dark .navbar div h5 {
 }
 body.dark .navbar div button {
   color: #FEFEFE;
+}
+body.dark .navbar .img1 {
+  display: none;
+}
+body.dark .navbar .img2 {
+  display: inline-flex;
 }
 
 .darkmode {
@@ -227,7 +251,7 @@ body.dark .navbar div button {
 /*seccion css*/
 .inicio {
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   color: #FEFEFE;
   display: flex;
   align-items: center;
@@ -239,6 +263,7 @@ body.dark .navbar div button {
   max-width: 350px;
   text-align: center;
   margin: auto;
+  text-align: center;
   border-radius: 40px;
 }
 
@@ -253,7 +278,7 @@ body.dark .navbar div button {
 }
 
 .inicio .contenedor-banner h1 {
-  margin-top: 42px;
+  margin-top: 20px;
   font-size: 40px;
 }
 

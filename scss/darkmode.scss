@@ -86,6 +86,20 @@ button{
     font-weight: 500;
 }
 
+.img2{
+    display: none;
+}
+
+.inicio{
+    .contenedor-banner{
+        .contenedor-img{
+            .img2{
+                display: none;
+            }
+        }
+    }
+}
+
 .micontainer{
     width: 94%;
     font-family: 'Signika Negative', sans-serif;
@@ -158,6 +172,7 @@ div {
 
 .inicio{
     body.dark & {
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
         box-shadow: $blanco;
         a {
             color: $blanco;
@@ -166,19 +181,40 @@ div {
                 color: $negro;
             }
         }
+
         h2{
             color: $blanco;
         }
+
         .redsocial{
             color: $blanco;
         }
+
         .contenedor-banner{
             background-color: $rojo;
         }
+
+        .redsocial a:hover{
+            background-color: $azul; //color q sale al pasar el cursor
+        }
+
+        .img1{
+            display: none;
+        }
+
+        .contenedor-banner{
+            .contenedor-img{
+                .img2{
+                    
+                    display: inline-block;
+                }
+            }
+        }
+
     }
 }
 
-
+//nav
 .navbar {
     background: #f1f1f149;
     display: flex;
@@ -188,7 +224,6 @@ div {
     border-radius: 5px;
     transition: .6s ease all;
     box-shadow: $sombraDark;
-
     body.dark & {
         background: $grisOscuro;
         box-shadow: $sombraLight;
@@ -213,6 +248,12 @@ div {
             button{
                 color: $blanco;
             }
+        }
+        .img1{
+            display: none;
+        }
+        .img2{
+            display: inline-flex;
         }
     }
 }
@@ -258,34 +299,40 @@ div {
         color: #fff;
     }
 }
+//fin modo oscuro
+
 
 /*seccion css*/
 .inicio{
     background-size: cover;
-    height: 85vh; //altura del card
+    height: 100vh; //altura del card
     color: $blanco;
     display: flex;
     align-items: center;
 }
+
 .inicio .contenedor-banner{
     background-color: $azulHover;
     padding: 20px;
     max-width: 350px;
     text-align: center;
     margin: auto;
+    text-align: center;
     border-radius: 40px;
 }
 .inicio .contenedor-banner img{
     margin-top: 40px;
-    border: 2px solid $negro;
+    border: 2px solid $negro; //borde de img
     display: block;
     width: 80%;
     margin: auto;
     text-align: center;
     border-radius: 10px;
 }
+
+
 .inicio .contenedor-banner h1{
-    margin-top: 42px;
+    margin-top: 20px;
     font-size: 40px;
 }
 .inicio .contenedor-banner h2{
@@ -307,12 +354,13 @@ div {
     transition: .3s;
 }
 .inicio .contenedor-banner .redsocial a:hover{
-    background-color: $rojo;
+    background-color: $rojo; //color q sale al pasar el cursor
 }
 /*para lo que es responsivo*/
 .navbar-toggler{
     display: none;
 }
+
 @media screen and (max-width:800px){
     .navbar-toggler{
         display: inline-block;
