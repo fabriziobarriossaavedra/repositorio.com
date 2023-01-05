@@ -140,7 +140,6 @@ body.dark .offcanvas-body li a:hover {
 }
 
 body.dark .inicio {
-  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/avatar/myAvatar2.png);
   box-shadow: #FEFEFE;
 }
 body.dark .inicio a {
@@ -250,8 +249,9 @@ body.dark .navbar .img2 {
 
 /*seccion css*/
 .inicio {
-  background-size: cover;
-  height: 100vh;
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/avatar/myAvatar2.png);
+  background-size: 90%;
+  height: 95vh;
   color: #FEFEFE;
   display: flex;
   align-items: center;
@@ -316,6 +316,9 @@ body.dark .navbar .img2 {
   }
   .nave1 {
     display: none;
+  }
+  .inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/avatar/myAvatar.png);
   }
 }
 /*fin*//*# sourceMappingURL=darkmode.css.map */

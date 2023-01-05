@@ -172,7 +172,6 @@ div {
 
 .inicio{
     body.dark & {
-        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
         box-shadow: $blanco;
         a {
             color: $blanco;
@@ -304,8 +303,9 @@ div {
 
 /*seccion css*/
 .inicio{
-    background-size: cover;
-    height: 100vh; //altura del card
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
+    background-size: 90%;
+    height: 95vh; //altura del card
     color: $blanco;
     display: flex;
     align-items: center;
@@ -367,6 +367,9 @@ div {
     }
     .nave1{
         display: none;
+    }
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar.png);
     }
 }
 /*fin*/
