@@ -250,7 +250,7 @@ body.dark .navbar .img2 {
 /*seccion css*/
 .inicio {
   background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/avatar/myAvatar2.png);
-  background-size: 90%;
+  background-size: contain;
   height: 95vh;
   color: #FEFEFE;
   display: flex;
