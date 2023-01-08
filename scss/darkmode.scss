@@ -85,6 +85,12 @@ button{
     text-decoration: none;
     font-weight: 500;
 }
+//texto => cajadw
+.texto{
+    color: $azul;
+    text-decoration: none;
+    font-weight: 1000;
+}
 
 .img2{
     display: none;
@@ -101,9 +107,11 @@ button{
 }
 
 .micontainer{
-    width: 94%;
-    font-family: 'Signika Negative', sans-serif;
-    margin: 0 auto;
+    //background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 //nav para modo negro
@@ -125,6 +133,14 @@ div {
         button{
             color: $blanco;
         }
+    }
+}
+.cajadw{
+    body.dark &{
+        .texto{
+            color: $rojo;
+        }
+        border: 2px solid $blanco;
     }
 }
 .navbar-toggler{
@@ -303,8 +319,9 @@ div {
 
 /*seccion css*/
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
+    //background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
     background-size: contain;
+    font-family: 'Ubuntu', sans-serif;
     height: 95vh; //altura del card
     color: $blanco;
     display: flex;
@@ -361,6 +378,97 @@ div {
     display: none;
 }
 
+.cajadw{
+    border: 2px solid $negro;
+    overflow: hidden;
+    position: relative;
+}
+
+//seccion contacto
+.contacto{
+    background-image: url(../img/contact_bg.png);
+    background-color: $grisOscuro;
+    color: $blanco;
+    padding: 50px 0;
+}
+.contacto .contact{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: $grisOscuro;
+    color: $blanco;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $blanco;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: $blanco;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $azul;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: $grisOscuro;
+    padding: 20px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: $azul;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+//responsivo
 @media screen and (max-width:800px){
     .navbar-toggler{
         display: inline-block;
@@ -368,8 +476,20 @@ div {
     .nave1{
         display: none;
     }
-    .inicio{
-        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar.png);
+    .micontainer{
+        //background: linear-gradient(to top, rgba(30,35,38,.8), rgb(48, 56, 61)), url(../img/avatar/myAvatar.png);
+        width: 94%;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0 auto;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col .info{
+        top: 50%;
     }
 }
 /*fin*/

@@ -25,31 +25,34 @@
         <!--PC-->
         <ul class="nave1 nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <button class="btn btn-outline-danger me-3">INICIO</button>
+            <a href="#inicio" class="btn btn-outline-danger me-3">INICIO</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-outline-success me-3">SOBRE MI</button>
+            <a href="#" class="btn btn-outline-success me-3">SOBRE MI</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-outline-primary me-3">HABILIDADES</button>
-          </li>
-          <li class="nav-item">            
-            <button class="btn btn-outline-primary me-3">CURRICULUM</button>
+            <a href="#" class="btn btn-outline-primary me-3">HABILIDADES</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-outline-primary me-3">PROYECTOS</button>
+            <a href="#" class="btn btn-outline-primary me-3">CURRICULUM</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-outline-primary me-3">CONTACTO</button>
+            <a href="#" class="btn btn-outline-primary me-3">PROYECTOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="btn btn-outline-primary me-3">CONTACTO</a>
           </li>
         </ul>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+      </div>
         <button class="darkmode" id="darkmode">
           <span><i class="bi bi-sun"></i></span>
-          <span><i class="bi bi-moon-stars"></i></span>
+          <span><i class="bi bi-cloud-moon-fill"></i></span>
         </button> 
 
         <!-- responsive -->
-        <button class="nave2 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <button class="nave2 navbar-toggler border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
           <span><i class="bi bi-list"></i></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
@@ -84,7 +87,8 @@
     </nav>
     <!--fin nav-->
 
-    <section class="inicio">
+    <!--inicio-->
+    <section id="inicio" class="inicio">
       <div class="contenedor-banner">
         <div class="contenedor-img">
           <img class="img1" src="img/avatar/myAvatar1.png" alt="imagen 1">
@@ -105,15 +109,62 @@
       </div>
     </section>
 
-    <!--prueba-->
-    <div class="row mb-2 py-4">
-      <div class="col-md-6">
-        <div class="cajadw row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col-auto d-none d-lg-block">
-            <img src="img/sichar.png" alt="black" style="width: 12rem; height: 12rem;">
+    <!--contacto-->
+    <section id="contacto" class="contacto">
+      <div class="contact">
+        <h2>contacto</h2>
+        <div class="fila">
+          <!--formulario-->
+          <div class="col">
+            <input type="text" placeholder="Tu nombre">
+            <input type="text" placeholder="Tu nombre">
+            <input type="text" placeholder="Tu nombre">
+            <input type="text" placeholder="Tu nombre">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button>
+              enviar Mensaje <i class="bi bi-send"></i>
+              <span class="overlay"></span>
+            </button>
           </div>
-          <div class="texto col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">SISCURSOS EN C##</strong>
+          <!--mapa-->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="">
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="bi bi-pin-map-fill"></i>
+                  Perú
+                </li>
+                <li>
+                  <i class="bi bi-phone"></i>
+                  llamanos: 2333
+                </li>
+                <li>
+                  <i class="bi bi-pin-map-fill"></i>
+                  Perú
+                </li>
+                <li>
+                  <i class="bi bi-phone"></i>
+                  llamanos: 2333
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+      prueba;
+      justify-content-center => centramos el contenido
+    -->
+    <div class="row px-4 mb-2 py-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="cajadw row g-0 rounded-4 flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="col-auto d-none d-lg-block">
+            <img src="img/code.svg" alt="black" style="width: 20rem;"">
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="texto d-inline-block">SISCURSOS EN C##</strong>
             <h3>Hecho en Clases</h3>
             <div class="mb-1">Dic 29</div>
             <p class="card-text mb-auto">Aqui te presento una aplicacion de Escritorio.</p>
@@ -122,11 +173,14 @@
         </div>
       </div>
     </div>
+    
 
+    <!---->
     <h1>pagina en prueba</h1>
     <a href="views/curriculum.html">puede ver mi curriculum haciendo click aqui</a>
     
   </div>
+    
 
   <script src="js/darkmode.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
