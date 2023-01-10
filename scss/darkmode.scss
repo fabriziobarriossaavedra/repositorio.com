@@ -186,6 +186,7 @@ div {
     }
 }
 
+//seccion inicio
 .inicio{
     body.dark & {
         box-shadow: $blanco;
@@ -229,6 +230,14 @@ div {
     }
 }
 
+//seccion contacto
+.contacto{
+    body.dark & {
+        h2{
+            color: $blanco;
+        }
+    }
+}
 //nav
 .navbar {
     background: #f1f1f149;
@@ -322,7 +331,7 @@ div {
     //background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/avatar/myAvatar2.png);
     background-size: contain;
     font-family: 'Ubuntu', sans-serif;
-    height: 95vh; //altura del card
+    height: 100vh; //altura del card
     color: $blanco;
     display: flex;
     align-items: center;
@@ -346,7 +355,6 @@ div {
     text-align: center;
     border-radius: 10px;
 }
-
 
 .inicio .contenedor-banner h1{
     margin-top: 20px;
@@ -445,7 +453,7 @@ div {
     width: 100%;
 }
 .contacto .col img{
-    width: 100%;
+    display: none;
 }
 .contacto .col .info{
     position: absolute;
@@ -469,7 +477,10 @@ div {
 }
 
 //responsivo
-@media screen and (max-width:800px){
+@media screen and (max-width: 980px){
+    .inicio{
+        height: 115vh; //altura del card
+    }
     .navbar-toggler{
         display: inline-block;
     }
@@ -491,5 +502,63 @@ div {
     .contacto .fila .col .info{
         top: 50%;
     }
+    .contacto .fila .col iframe{
+        display: none;
+    }
 }
+
+@media screen and (max-width: 700px){
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .nave1{
+        display: none;
+    }
+    .micontainer{
+        //background: linear-gradient(to top, rgba(30,35,38,.8), rgb(48, 56, 61)), url(../img/avatar/myAvatar.png);
+        width: 94%;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0 auto;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col .info{
+        top: 50%;
+    }
+    .contacto .fila .col iframe{
+        display: none;
+    }
+}
+/*
+@media screen and (max-width: 800px){
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .nave1{
+        display: none;
+    }
+    .micontainer{
+        //background: linear-gradient(to top, rgba(30,35,38,.8), rgb(48, 56, 61)), url(../img/avatar/myAvatar.png);
+        width: 94%;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0 auto;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col .info{
+        top: 50%;
+    }
+    .contacto .fila .col iframe{
+        display: none;
+    }
+}
+*/
 /*fin*/

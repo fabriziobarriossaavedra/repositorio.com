@@ -181,6 +181,10 @@ body.dark .inicio .contenedor-banner .contenedor-img .img2 {
   display: inline-block;
 }
 
+body.dark .contacto h2 {
+  color: #FEFEFE;
+}
+
 .navbar {
   background: rgba(241, 241, 241, 0.2862745098);
   display: flex;
@@ -265,7 +269,7 @@ body.dark .navbar .img2 {
 .inicio {
   background-size: contain;
   font-family: "Ubuntu", sans-serif;
-  height: 95vh;
+  height: 100vh;
   color: #FEFEFE;
   display: flex;
   align-items: center;
@@ -401,7 +405,7 @@ body.dark .navbar .img2 {
 }
 
 .contacto .col img {
-  width: 100%;
+  display: none;
 }
 
 .contacto .col .info {
@@ -428,7 +432,10 @@ body.dark .navbar .img2 {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
+  .inicio {
+    height: 115vh;
+  }
   .navbar-toggler {
     display: inline-block;
   }
@@ -449,5 +456,61 @@ body.dark .navbar .img2 {
   .contacto .fila .col .info {
     top: 50%;
   }
+  .contacto .fila .col iframe {
+    display: none;
+  }
 }
+@media screen and (max-width: 700px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+  .nave1 {
+    display: none;
+  }
+  .micontainer {
+    width: 94%;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 auto;
+  }
+  .contacto .fila {
+    display: block;
+  }
+  .contacto .fila .col {
+    width: 100%;
+  }
+  .contacto .fila .col .info {
+    top: 50%;
+  }
+  .contacto .fila .col iframe {
+    display: none;
+  }
+}
+/*
+@media screen and (max-width: 800px){
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .nave1{
+        display: none;
+    }
+    .micontainer{
+        //background: linear-gradient(to top, rgba(30,35,38,.8), rgb(48, 56, 61)), url(../img/avatar/myAvatar.png);
+        width: 94%;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0 auto;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col .info{
+        top: 50%;
+    }
+    .contacto .fila .col iframe{
+        display: none;
+    }
+}
+*/
 /*fin*//*# sourceMappingURL=darkmode.css.map */
