@@ -472,65 +472,6 @@ div {
 }
 
 //responsivo
-@media screen and (max-width: 400px){
-    .inicio{
-        height: 115vh; //altura del card
-    }
-    .navbar-toggler{
-        display: inline-block;
-    }
-    .nave1{
-        display: none;
-    }
-    .micontainer{
-        //background: linear-gradient(to top, rgba(30,35,38,.8), rgb(48, 56, 61)), url(../img/avatar/myAvatar.png);
-        width: 94%;
-        font-family: 'Ubuntu', sans-serif;
-        margin: 0 auto;
-    }
-    /*
-    .contacto .fila .col .info{
-        top: 50%;
-    }*/
-    .contacto .fila .col iframe{
-        display: none;
-    }
-    
-    .contacto .col img{
-        display: inline;
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
-    .contacto .col .info{
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        background-color: $grisOscuro;
-        padding: 20px;
-        width: 350px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .contacto .col .info ul{
-        display: inline-block;
-        list-style: none;
-    }
-    .contacto .col .info ul li{
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-    .contacto .col .info ul li i{
-        display: inline-block;
-        color: $azul;
-        display: inline-block;
-        margin-right: 20px;
-    }
-}
 /**/
 @media screen and (max-width: 700px){
     .inicio{
@@ -587,7 +528,9 @@ div {
 }
 
 @media screen and (max-width: 800px){
-    
+    .inicio{
+        height: 115vh; //altura del card
+    }
     .navbar-toggler{
         display: inline-block;
     }

@@ -428,63 +428,6 @@ body.dark .navbar .img2 {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
-  .inicio {
-    height: 115vh;
-  }
-  .navbar-toggler {
-    display: inline-block;
-  }
-  .nave1 {
-    display: none;
-  }
-  .micontainer {
-    width: 94%;
-    font-family: "Ubuntu", sans-serif;
-    margin: 0 auto;
-  }
-  /*
-  .contacto .fila .col .info{
-      top: 50%;
-  }*/
-  .contacto .fila .col iframe {
-    display: none;
-  }
-  .contacto .col img {
-    display: inline;
-    width: 100%;
-  }
-  .contacto .fila {
-    display: block;
-  }
-  .contacto .fila .col {
-    width: 100%;
-  }
-  .contacto .col .info {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    background-color: #222222;
-    padding: 20px;
-    width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .contacto .col .info ul {
-    display: inline-block;
-    list-style: none;
-  }
-  .contacto .col .info ul li {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  .contacto .col .info ul li i {
-    display: inline-block;
-    color: #3E60E9;
-    display: inline-block;
-    margin-right: 20px;
-  }
-}
 /**/
 @media screen and (max-width: 700px) {
   .inicio {
