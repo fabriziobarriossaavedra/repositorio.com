@@ -2,10 +2,10 @@ Estoy en Proceso de Crear mi Portafolio Personal
 click en el siguiente enlace: 
 <br>
 <h3>GITHUB</h3>
-<a href="https://fabriziobarriossaavedra.github.io/repositorio.com" title="Ver Proyecto rounded-3">🙂 <h4>GIT HUB</h4></a>
+<a href="https://fabriziobarriossaavedra.github.io/repositorio.com" title="Ver Proyecto rounded-3">🙂 GIT HUB</a>
 <br>
 <h3></h3>
-<a href="https://repositorio-com.vercel.app" title="Ver Proyecto">🙂 <h4>VERCEL APP</h4></a>    
+<a href="https://repositorio-com.vercel.app" title="Ver Proyecto">🙂 VERCEL APP</a>    
 
 por el momento esta en mantenimiento ;)
 <br>
