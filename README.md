@@ -1,9 +1,11 @@
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-</head>
 Estoy en Proceso de Crear mi Portafolio Personal
 click en el siguiente enlace: 
-<a href="https://fabriziobarriossaavedra.github.io/repositorio.com" class="btn btn-outline-success bi bi-arrow-down-circle"  title="Ver Proyecto" target="_blank" style="text-decoration:none; color: white;">Repositorio Git Hub <i class="bi bi-github"></i></a>
+<br>
+<h3>GITHUB</h3>
+<a href="https://fabriziobarriossaavedra.github.io/repositorio.com" title="Ver Proyecto rounded-3">🙂 <h4>GIT HUB</h4></a>
+<br>
+<h3></h3>
+<a href="https://repositorio-com.vercel.app" title="Ver Proyecto">🙂 <h4>VERCEL APP</h4></a>    
 
 por el momento esta en mantenimiento ;)
 <br>
