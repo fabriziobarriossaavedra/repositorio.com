@@ -1,20 +1,27 @@
-Estoy en Proceso de Crear mi Portafolio Personal
-click en el siguiente enlace: 
+Mi portafolio Personal Esta Casi Listo
+Lenguajes Utilizados:
+<h4 class="py-3">HTML</h4>
+<h4 class="py-3">SCSS</h4>
+<h4 class="py-3">CSS</h4>
+<h4 class="py-3">BOOTSTRAP</h4>
+<h4 class="py-3">FONT AWESOME</h4>
+<h4 class="py-3">FIGMA (imagenes de fondo)</h4>
 <br>
-<h3>GITHUB</h3>
+Puedes Visualizarlo en los siguientes enlaces: 
+<h3 class="py-4">GITHUB</h3>
 <a href="https://fabriziobarriossaavedra.github.io/repositorio.com" title="Ver Proyecto rounded-3">🙂 GIT HUB</a>
-<br>
-<h3></h3>
+
+<h3 class="py-4">VERCEL</h3>
 <a href="https://repositorio-com.vercel.app" title="Ver Proyecto">🙂 VERCEL APP</a>    
 
-por el momento esta en mantenimiento ;)
-<br>
-<a class="py-3 border rounded-5"><img src="img/readme/lightmode.png" alt="blanco" border="0"></a>
-<a class="py-4 border rounded-5"><img src="img/readme/darkmode.png" alt="negro" border="0"></a>
-<a class="py-2 border rounded-5"><img src="img/readme/vid1.gif" alt="video" border="3" style="width: 20rem;"></a>
+<h4 class="py-3">por el momento esta en mantenimiento ;)</h4>
+<a class="py-4" align="center"><img src="img/readme/lightmode.png" alt="blanco" border="0" style="width: 40rem;"></a>
+<a class="py-4" align="center"><img src="img/readme/darkmode.png" alt="negro" border="0" style="width: 40rem;"></a>
+<h4>FIGMA</h4>
+<a class="py-4" align="center"><img src="img/readme/figma.png" alt="negro" border="0" style="width: 40rem;"></a>
 
 <h1>Pronto Nueva App de Escritorio</h1>
 <h4>Preview</h4>
-<a class="py-2 border rounded-5"><img src="img/readme/escritorio.gif" alt="Desktop" border="3" style="width: 40rem;"></a>
+<a class="py-2" align="center"><img src="img/readme/escritorio.gif" alt="Desktop" border="0" style="width: 40rem;"></a>
 <h3><b>Realizado por:</b> Fabrizio Barrios Saavedra (RFBS19)</h3>
-<img src="img/avatar/myAvatar3.png" width="200" alt="avatar">
+<img src="img/readme/foter.jpg" width="200" alt="avatar">

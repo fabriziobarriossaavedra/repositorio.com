@@ -159,6 +159,8 @@ body.dark .offcanvas-body li a:hover {
 
 body.dark .inicio {
   box-shadow: #FEFEFE;
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/darkmode.png);
+  background-size: cover;
 }
 body.dark .inicio a {
   color: #FEFEFE;
@@ -266,17 +268,30 @@ body.dark .navbar .img2 {
   line-height: 30px;
   display: block;
   background: none;
-  color: #fff;
+  color: #FEFEFE;
+}
+
+/*para lo que es responsivo*/
+.navbar-toggler {
+  display: none;
+}
+
+.cajadw {
+  border: 2px solid #111111;
+  overflow: hidden;
+  position: relative;
 }
 
 /*seccion css*/
 .inicio {
-  background-size: contain;
+  background: linear-gradient(to top, rgba(238, 238, 238, 0.8), rgb(238, 238, 238)), url(../img/whitemode.png);
+  background-size: cover;
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
   color: #FEFEFE;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .inicio .contenedor-banner {
@@ -327,20 +342,12 @@ body.dark .navbar .img2 {
   background-color: #e74545;
 }
 
-/*para lo que es responsivo*/
-.navbar-toggler {
-  display: none;
-}
-
-.cajadw {
-  border: 2px solid #111111;
-  overflow: hidden;
-  position: relative;
+.sobremi {
+  padding: 50px 20px;
 }
 
 .contacto {
-  background-image: url(../img/contact_bg.png);
-  background-color: #222222;
+  background-image: url(../img/mundo.png);
   color: #FEFEFE;
   padding: 50px 0;
 }
@@ -394,6 +401,7 @@ body.dark .navbar .img2 {
 }
 
 .contacto button .overlay {
+  border-radius: 4px;
   position: absolute;
   top: 0;
   left: 0;
@@ -440,6 +448,7 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 /**/
 @media screen and (max-width: 800px) {
   .inicio {
+    background-image: none;
     height: 100vh;
   }
   .navbar-toggler {

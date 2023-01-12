@@ -9,7 +9,9 @@
     <link rel="icon" href="img/avatar/icono.png">
     <!--CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/darkmode.css">
 </head>
 <body>
@@ -43,22 +45,19 @@
             <a href="#contacto" class="btn btn-outline-primary me-3">CONTACTO</a>
           </li>
         </ul>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
-      </div>
         <button class="darkmode" id="darkmode">
-          <span><i class="bi bi-sun"></i></span>
-          <span><i class="bi bi-cloud-moon-fill"></i></span>
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-cloud-moon"></i></span>
         </button> 
 
         <!-- responsive -->
         <button class="nave2 navbar-toggler border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-          <span><i class="bi bi-list"></i></span>
+          <span><i class="fa-solid fa-bars"></i></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Mi Perfil</h5>
-            <span><i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i></span>
+            <span><i class="fa-regular fa-circle-xmark fa-2x" data-bs-dismiss="offcanvas" aria-label="Close"></i></span>
           </div>
           <div class="offcanvas-body text-center">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -97,14 +96,14 @@
         <h1>Fabrizio Barrios Saavedra</h1>
         <h2>Ingeniero de Software</h2>
         <div class="redsocial">
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-whatsapp"></i></a>
-          <a href=""><i class="bi bi-youtube"></i></a>
-          <a href=""><i class="bi bi-github"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-          <a href=""><i class="bi bi-twitter"></i></a>
-          <a href=""><i class="bi bi-browser-chrome"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </section>
@@ -151,9 +150,52 @@
             </div>
 
             <!--Intereses-->
+            <div class="col">
+              <h3>Intereses</h3>
+              <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>JUEGOS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-headphones-simple"></i>
+                  <span>MUSICA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <span>VIAJAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-ubuntu"></i>
+                  <span>UBUNTU</span>
+                </div>
+                <!--icono para responsive-->
+                <div class="interes1">
+                  <i class="fa-brands fa-linux"></i>
+                  <span>UBUNTU</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-futbol"></i>
+                  <span>DEPORTE</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>PROGRAMAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-car"></i>
+                  <i class="fa-solid fa-motorcycle"></i>
+                  <span>AUTOS y motos</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>FOTOS</span>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
 
     <!--contacto-->
     <section id="contacto" class="contacto">
@@ -167,7 +209,7 @@
             <input type="text" placeholder="Tu nombre">
             <input type="text" placeholder="Tu nombre">
             <textarea name="" id="" cols="30" placeholder="Mensaje"></textarea>
-            <button>
+            <button type="button" class="btn btn-outline">
               enviar Mensaje <i class="bi bi-send"></i>
               <span class="overlay"></span>
             </button>
@@ -217,7 +259,7 @@
             <h3>Hecho en Clases</h3>
             <div class="mb-1">Dic 29</div>
             <p class="card-text mb-auto">Aqui te presento una aplicacion de Escritorio.</p>
-            <a download="" href="download/SISCURSOS.rar" class="btn btn-outline-success bi bi-arrow-down-circle"  title="descargar el proyecto">&nbsp; descargar</a>
+            <a download="" href="download/SISCURSOS.rar" class="btn btn-outline-success fa-solid fa-download"  title="descargar el proyecto">&nbsp; descargar</a>
           </div>
         </div>
       </div>
@@ -225,6 +267,7 @@
     
 
     <!---->
+    <button type="button" class="btn btn-outline-primary">Puedes Descargar mi CV <i class="fa-solid fa-download"></i></button>
     <h1>pagina en prueba</h1>
     <a href="views/curriculum.html">puede ver mi curriculum haciendo click aqui</a>
     
